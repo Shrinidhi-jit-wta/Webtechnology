@@ -1,0 +1,55 @@
+<html>
+    <title>Simple calculator</title>
+        <head>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <script src="script.js"></script>
+        </head>
+    <body>
+        
+        <table>
+           <tr>
+           <td>
+            <td>
+               
+                <label>Calculator </label>
+             <input type="text" id="answer" size="16" disabled >
+                    
+                <input type="button" value="1" id="one" onclick="sendnum('1')">
+                <input type="button" value="2" id="two" onclick="sendnum('2')">
+                <input type="button" value="3" id="three" onclick="sendnum('3')">
+                <input type="button" value="+" id="plus" onclick="sendnum('+')">
+                <br>
+                <input type="button" value="4" id="four" onclick="sendnum('4')">
+                <input type="button" value="5" id="five" onclick="sendnum('5')">
+                <input type="button" value="6" id="six" onclick="sendnum('6')">
+                <input type="button" value="-" id="minus"  onclick="sendnum('-')">
+                 <br>
+                 <input type="button" value="7" id="seven" onclick="sendnum('7')">
+                 <input type="button" value="8" id="eight" onclick="sendnum('8')">
+                 <input type="button" value="9" id="nine" onclick="sendnum('9')"> 
+                 <input type="button" id="times" value="*" onclick="sendnum('*')">
+    
+          
+                 <br>
+                 <input type="button" id="clear" value=" AC " onclick="clearScr()">
+                 <input type="button" value="0"id="zero" onclick="sendnum('0')">
+                 <input type="button" value=" = "id="equals" onclick="equalTo()">
+                 <input type="button" value="&#247" id="div"  onclick="sendnum('/')">
+                 <br>
+            </td>
+           </td>
+        </tr>
+    </table>
+   
+      <div class="footer">
+        <p> Created By Shrinidhi Holla | <a href="https://github.com/Shrinidhi-Holla" >Github</a> | 
+            <a href="https://www.linkedin.com/in/shrinidhi-holla-898537183/">Linkedin
+            <!--<i class="material-icons">account_circle</i>-->
+        </a></p>
+    
+      </div>
+      
+    </body>
+  
+</html>
