@@ -3,25 +3,35 @@
 <head>
     <title>assignment-1</title>
     <style type="text/css">
-    html{
-        background-color: grey;
-        
-    }
+        html {
+            background-color: grey;
+
+        }
+
         table {
             border: 12px solid rgb(255, 255, 255);
             text-align: center;
-            background-color: rgb(45, 45, 46);
+            background-color: rgb(247, 247, 247);
             margin: auto;
-            
+            height: 200px;
+        
         }
-        td,th{
-            background-color:white;
-            color: black;
+
+        td,
+        th {
+            background-color: rgba(0, 0, 0, 0.514);
+            color: rgb(255, 255, 255);
         }
 
         input {
             text-align: center;
-            
+            background-color: rgb(87, 87, 87);
+            color: white;
+         
+
+        }
+        #cls{
+            width: 250px;
         }
     </style>
     <script type="text/javascript">
@@ -42,7 +52,7 @@
                     location.reload();
                 }
                 else
-                document.getElementById("answer").value = v1 / v2;
+                    document.getElementById("answer").value = v1 / v2;
             }
         }
         function cls() {
@@ -72,7 +82,8 @@
         </tr>
         <tr>
             <td> Result: </td>
-            <td> <input type="text" id="answer" value="" /></td>
+            <td> <input type="text" id="answer" value="" disabled/></td>
+            <td> </td>
             <td><input type="button" value="Clear All" id="cls" onclick="cls(this.id)" /> </td>
         </tr>
     </table>

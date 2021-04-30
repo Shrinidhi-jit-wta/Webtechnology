@@ -22,8 +22,6 @@ function sendnum(digit) {
 
 // when the user presses "=", function "equalTo()" is called 
 function equalTo() {
-	document.getElementById('answer').value = "0";
-
 
 	//console.log("inequalto>",test)
 	ans = eval(test);	//evaluation of expression
@@ -64,7 +62,6 @@ function perc(){														//displays 100% of resultant
 	var x=document.getElementById("answer").value;
 	var y=100;
 	res=x/y;
-	test=res;
-	console.log(res);
+	//console.log(res);
 		document.getElementById("answer").value= res;
 }
