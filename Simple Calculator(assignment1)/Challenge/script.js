@@ -33,7 +33,7 @@ function equalTo() {
 	document.getElementById('answer').value = ans;		// result display
 
 }
-
+  
 
 // When user presses "AC", function "clearScr()" is called
 function clearScr() {
