@@ -1,6 +1,5 @@
 function main() {
 
-
     var var1 = setInterval(inTimer, 100);
     var fs = 10; //font size
     var ids = document.getElementById("growtext");
