@@ -1,0 +1,95 @@
+body {
+    background-color: #333;
+}
+
+.main {
+    margin-top: 80px;
+}
+
+.navbar {
+    position: fixed;
+    top: 1px;
+    left: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 1920px;
+    height: max-content;
+    border: 1px solid white;
+    border-radius: 10px 10px;
+}
+
+li {
+    float: left;
+    padding-right: 10px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 10px 10px;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+
+img {
+    border: 5px solid white;
+    border-radius: 10px 10px;
+}
+
+.wordsofwisdom {
+    font-size: 20px;
+    color: white;
+}
+
+.growtext {
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    font-size: 30px;
+    color: white
+}
+
+.checked {
+    color: orange;
+}
+
+#line {
+    font-size: 2px;
+    background-color: black;
+}
+
+.p1rating,
+.p2rating,
+.p3rating {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #333;
+    color: white;
+}

@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="gallery.html">gallery</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="main">
+        <div class="heading">
+            <h2>Photography a therapeutic experience</h2>
+        </div>
+        <div id="Image">
+            <a href="https://www.instagram.com/p/CPBlME6AVWy/?utm_medium=copy_link">
+                <img src="mainimage.jpg" width="500px" height="300px"></a>
+        </div>
+
+        <br>
+        <div class="wordsofwisdom">
+            Photography is a very peaceful and beautiful experince. Only a photo has the power freeze time.<br> Whenever you look at a photo you remember that exact moment in life that photo was clicked.<br> ~Peter Mckinnon<br> All the photos in the gallery
+            are shot by me (Shrinidhi Holla) and can be found on instagram on
+            <a href="https://www.instagram.com/pixelshutter_captures/" style="color:white"> @pixelshutter_captures </a>.</div>
+        <div class="growtext" id="growtext">
+            <script>
+                var var1 = setInterval(inTimer, 100);
+                var fs = 10; //font size
+                var ids = document.getElementById("growtext");
+
+
+                function inTimer() {
+                    ids.innerHTML = 'Just shoot!!!!';
+                    ids.setAttribute('style', "font-size: " + fs + "px; color: white");
+                    fs += 5;
+                    if (fs >= 50) {
+                        clearInterval(var1); //paused
+                        var2 = setInterval(deTimer, 100);
+
+                    }
+
+                }
+
+                function deTimer() //fs = 50px
+                {
+                    fs -= 5;
+                    ids.innerHTML = 'Just shoot!!!!';
+                    ids.setAttribute('style', "font-size: " + fs + "px; color: white");
+                    if (fs == 10) {
+                        clearInterval(var2); //paused
+                        var1 = setInterval(inTimer, 100);
+                    }
+                }
+            </script>
+        </div>
+
+        <script>
+        </script>
+        <br>
+        <div id="line">&nbsp;</div>
+        <br>
+        <div class="ratings">
+            <div class="p1rating">
+                <p>
+                    <h2><strong>Peter:</strong></h2>
+                    <h3><small>Great shot</small></h3>
+                </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div><br>
+            <div id="line">&nbsp;</div>
+            <div class="p2rating">
+                <p>
+                    <strong><h2>Chris:</strong></h2>
+                    <h3> <small>nice shot but the exposure could have been better.</small></h3>
+                </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div><br>
+            <div id="line">&nbsp;</div>
+            <div class="p3rating">
+                <h2><strong>matti:</strong></h2>
+                <h3>beautiful</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div><br>
+            <div id="line">&nbsp;</div>
+        </div>
+    </div>
+    <footer>
+        <p>©Shrinidhi Holla</p>
+        <p>
+            <a href="https://github.com/Shrinidhi-Holla" style="color:white">Git:Shrinidhi-Holla</a></p>
+    </footer>
+</body>
+
+</html>
