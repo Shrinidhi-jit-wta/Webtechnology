@@ -15,13 +15,12 @@
             num = parseInt(str);
             while (num != 0) {
                 remainder = num % 10;
-                prod = prod * remainder;
                 num = parseInt(num / 10);
                 rev = rev * 10 + remainder;
 
             }
-            // num2 = parseint(str) * rev;
-            alert("Reverse of " + str + " is " + rev + "product of " + str + " is " + prod);
+            prod = rev * str;
+            alert("Reverse of " + str + " is " + rev + " product of " + str + " and " + rev + " is " + prod);
 
         } else {
             var i;
