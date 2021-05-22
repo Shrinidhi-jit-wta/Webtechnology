@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Program-4</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var str = prompt("Enter the Input", "");
+        if (!(isNaN(str))) {
+            var num, rev = 0,
+                remainder;
+            num = parseInt(str);
+            while (num != 0) {
+                remainder = num % 10;
+                num = parseInt(num / 10);
+                rev = rev * 10 + remainder;
+            }
+            alert("Reverse of " + str + " is " + rev);
+        } else {
+            var count = 0;
+            str = str.toUpperCase();
+            for (var i = 0; i < str.length; i++) {
+                var chr = str.charAt(i);
+                if (chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U')
+                    count += 1;
+                var pos = i;
+
+
+            }
+            if (count != 0)
+                alert("The position of the left most vowel is " + (pos + 1));
+            else
+                alert("No vowel found in the entered string");
+        }
+    </script>
+</body>
+
+</html>

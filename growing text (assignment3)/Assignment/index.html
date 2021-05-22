@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Text Shrink</title>
+    <title>Text grow</title>
     <style>
         p {
             position: absolute;
@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <p id="demo"></p>
+    <p id="text"></p>
     <script>
         var var1 = setInterval(inTimer, 500);
         var fs = 5; //font size
-        var ids = document.getElementById("demo");
+        var ids = document.getElementById("text");
 
         function inTimer() {
             ids.innerHTML = 'TEXT GROWING';
